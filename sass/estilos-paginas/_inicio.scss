@@ -1,0 +1,17 @@
+/*INICIO BODY*/
+
+.carousel-container  {
+    max-width: 50vh;
+}
+
+#carouselExampleIndicators{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: $color-carousel;
+}
+
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(108%);
+  }

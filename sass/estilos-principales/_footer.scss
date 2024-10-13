@@ -1,0 +1,17 @@
+/*FOOTER*/
+
+.estilosFooter  {
+    background-color: $color-fondo-footer;
+        .contenedorFooter  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+            .logoPagos  {
+                height: 5vh;
+            }
+        }
+
+}
+
+
+

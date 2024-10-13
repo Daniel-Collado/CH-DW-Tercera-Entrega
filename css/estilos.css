@@ -1,0 +1,244 @@
+@charset "UTF-8";
+/*Variables*/
+/*Color*/
+/*Letra*/
+/*Mixins*/
+/*Mixin*/
+/*Estilos Principales*/
+/*Global*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*HEADER*/
+.logoTamano {
+  height: 10vh;
+}
+
+.navbar {
+  background-color: #003637;
+}
+
+.colorLetraNavbar {
+  color: #f3a183;
+}
+
+.navbar-toggler {
+  background-color: #8d9f87;
+}
+
+/*FOOTER*/
+.estilosFooter {
+  background-color: rgba(243, 161, 131, 0.2509803922);
+}
+.estilosFooter .contenedorFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.estilosFooter .contenedorFooter .logoPagos {
+  height: 5vh;
+}
+
+@media (min-width: 350px) and (max-width: 767px) {
+  .iconoRedes {
+    font-size: 16px;
+    color: #818e64;
+  }
+  .logoFooter {
+    height: 30px;
+  }
+  .ferias__foto3 {
+    padding-bottom: 1rem;
+  }
+  .card {
+    width: 18rem;
+  }
+  .productos__container-encabezado {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .iconoRedes {
+    font-size: 26px;
+    color: #818e64;
+  }
+  .logoFooter {
+    height: 45px;
+  }
+  .card {
+    width: 25rem;
+  }
+  .productos__container-encabezado {
+    padding-left: 90px;
+    padding-top: 25px;
+  }
+}
+@media (min-width: 992px) {
+  .iconoRedes {
+    font-size: 36px;
+    color: #818e64;
+  }
+  .logoFooter {
+    height: 60px;
+  }
+  .card {
+    width: 28rem;
+  }
+  .productos__container-encabezado {
+    padding-left: 12px;
+    padding-top: 25px;
+  }
+}
+/*Estilos Paginas*/
+/*INICIO BODY*/
+.carousel-container {
+  max-width: 50vh;
+}
+
+#carouselExampleIndicators {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(242, 161, 134, 0.062745098);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  filter: invert(108%);
+}
+
+/*Paginas/Quienes Somos*/
+.quienesSomos__container-encabezado {
+  font-family: "Playfair Display", serif;
+  background-color: #8d9f87;
+  font-size: medium;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+.quienesSomos__container-encabezado h1 {
+  margin-bottom: 0;
+  text-shadow: 5px 5px 10px #003637;
+}
+
+.quienesSomos {
+  background-color: rgba(243, 161, 131, 0.1254901961);
+}
+
+.textoQuienesSomos {
+  font-family: "Bona Nova", serif;
+  font-optical-sizing: auto;
+  font-size: 1.4em;
+  font-style: normal;
+  color: #8d9f87;
+}
+
+/*Paginas/Productos*/
+.productos {
+  background-color: rgba(243, 161, 131, 0.1254901961);
+}
+
+.productos__container-encabezado {
+  font-family: "Wittgenstein", serif;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 4px;
+  background: rgba(202, 206, 218, 0.2509803922);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.btn {
+  background-color: rgba(131, 212, 243, 0.3137254902);
+}
+
+#Macetas .estilos {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  margin: 0;
+}
+
+#SetDeBaño .estilos {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  margin: 0;
+}
+
+#SetdePosavasos .estilos {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  margin: 0;
+}
+
+#Terrazo .estilos {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  margin: 0;
+}
+
+#BanquitosDeHormigon .estilos {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  margin: 0;
+}
+
+#PortaVelas .estilos {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  margin: 0;
+}
+
+.ferias__container-encabezado {
+  font-family: "Playfair Display", serif;
+  background-color: rgba(141, 159, 135, 0.3137254902);
+  font-size: medium;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.ferias__container-encabezado h1 {
+  margin-bottom: 0;
+  text-shadow: 5px 5px 10px #818e64;
+}
+
+.ferias__fondo {
+  background-color: rgba(141, 159, 135, 0.3137254902);
+}
+
+/*Paginas/Contacto*/
+.contacto__container-encabezado {
+  font-family: "Playfair Display", serif;
+  font-size: medium;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+#contacto {
+  min-height: 70vh;
+}
+
+.estilosMapa {
+  display: flex;
+  justify-content: right;
+}
+
+/*# sourceMappingURL=estilos.css.map */

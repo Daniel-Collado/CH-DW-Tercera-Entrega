@@ -1,0 +1,57 @@
+@media (min-width: 350px) and (max-width: 767px) {
+    .iconoRedes{
+        font-size: 16px;
+        color: $color-iconos;
+    }
+    .logoFooter{
+        height: 30px;
+    }
+    .ferias__foto3{
+        padding-bottom: 1rem;
+    }
+    .card{
+        width: 18rem;
+    }
+
+    .productos__container-encabezado{
+        display: flex;
+        justify-content: center;
+    }   
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .iconoRedes{
+        font-size: 26px;
+        color: $color-iconos;
+    }
+    .logoFooter{
+        height: 45px;
+    }
+    .card{
+        width: 25rem;
+    }
+    .productos__container-encabezado  {
+    
+        padding-left: 90px;
+        padding-top: 25px;
+    }
+}
+
+@media (min-width: 992px) {
+    .iconoRedes{
+        font-size: 36px;
+        color: $color-iconos;
+    }
+    .logoFooter{
+        height: 60px;
+    }
+    .card{
+        width: 28rem;
+    }
+    .productos__container-encabezado  {
+        padding-left: 12px;
+        padding-top: 25px;
+    }
+}
+
+
