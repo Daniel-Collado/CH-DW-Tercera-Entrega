@@ -2,6 +2,7 @@
 /*Variables*/
 /*Color*/
 /*Letra*/
+/*ImageHover*/
 /*Mixins*/
 /*Mixin*/
 /*Estilos Principales*/
@@ -44,7 +45,7 @@
 
 @media (min-width: 350px) and (max-width: 767px) {
   .iconoRedes {
-    font-size: 16px;
+    font-size: 20px;
     color: #818e64;
   }
   .logoFooter {
@@ -59,6 +60,15 @@
   .productos__container-encabezado {
     display: flex;
     justify-content: center;
+  }
+  .main__Index {
+    display: block !important;
+  }
+  .main__Index-a {
+    display: none;
+  }
+  .main__Index-c {
+    display: none;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -93,14 +103,122 @@
     padding-top: 25px;
   }
 }
+/*!
+ * ImageHover.css - http://www.imagehover.io
+ * Version 2.0
+ * Author: Ciarán Walsh
+
+ * Made available under a MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+
+ */
+[class^=imghvr-],
+[class*=" imghvr-"] {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  max-width: 100%;
+  background-color: rgba(141, 159, 135, 0.3137254902);
+  color: #fff;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translateZ(0);
+}
+[class^=imghvr-] > img,
+[class*=" imghvr-"] > img {
+  vertical-align: top;
+  max-width: 100%;
+}
+[class^=imghvr-] figcaption,
+[class*=" imghvr-"] figcaption {
+  background-color: rgba(129, 142, 100, 0.2509803922);
+  padding: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #ffffff;
+}
+[class^=imghvr-] figcaption h1,
+[class^=imghvr-] figcaption h2,
+[class^=imghvr-] figcaption h3,
+[class^=imghvr-] figcaption h4,
+[class^=imghvr-] figcaption h5,
+[class^=imghvr-] figcaption h6,
+[class*=" imghvr-"] figcaption h1,
+[class*=" imghvr-"] figcaption h2,
+[class*=" imghvr-"] figcaption h3,
+[class*=" imghvr-"] figcaption h4,
+[class*=" imghvr-"] figcaption h5,
+[class*=" imghvr-"] figcaption h6 {
+  color: #ffffff;
+}
+[class^=imghvr-] a,
+[class*=" imghvr-"] a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+[class^=imghvr-],
+[class*=" imghvr-"],
+[class^=imghvr-]:before,
+[class^=imghvr-]:after,
+[class*=" imghvr-"]:before,
+[class*=" imghvr-"]:after,
+[class^=imghvr-] *,
+[class*=" imghvr-"] *,
+[class^=imghvr-] *:before,
+[class^=imghvr-] *:after,
+[class*=" imghvr-"] *:before,
+[class*=" imghvr-"] *:after {
+  box-sizing: border-box;
+  transition: all 0.35s ease;
+}
+
+.imghvr-hinge-up img {
+  transform-origin: 50% 0%;
+}
+.imghvr-hinge-up figcaption {
+  transform: rotateX(90deg);
+  transform-origin: 50% 100%;
+  font-family: "Raleway", sans-serif;
+}
+.imghvr-hinge-up:hover > img {
+  transform: rotateX(-90deg);
+}
+.imghvr-hinge-up:hover figcaption {
+  transform: rotateX(0);
+}
+
 /*Estilos Paginas*/
 /*INICIO BODY*/
-.carousel-container {
-  max-width: 50vh;
+/*.carousel-container  {
+    max-width: 50vh;
+}*/
+.main__Index {
+  width: 100vw;
+  background-color: rgba(243, 161, 131, 0.3764705882);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "a b c";
+}
+
+.main__Index-a {
+  grid-area: a;
+  height: 50vh;
+  filter: blur(8px);
 }
 
 #carouselExampleIndicators {
-  width: 100vw;
+  width: 100%;
+  grid-area: b;
   display: flex;
   justify-content: center;
   background-color: rgba(242, 161, 134, 0.062745098);
@@ -108,6 +226,14 @@
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
   filter: invert(108%);
+}
+
+/*.carousel-item{
+    width: 100%;
+    height: 40vh;
+}*/
+.main__Index-c {
+  grid-area: c;
 }
 
 /*Paginas/Quienes Somos*/
@@ -239,6 +365,11 @@
 .estilosMapa {
   display: flex;
   justify-content: right;
+}
+
+.contacto__AreaTexto {
+  resize: none;
+  height: 150px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
