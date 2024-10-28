@@ -6,6 +6,7 @@
 
 .productos__container-encabezado  {
     font-family: $letra-productos;
+    text-shadow: 2px 2px 5px $color-terciario;
     display: flex;
     justify-content: center;
 }

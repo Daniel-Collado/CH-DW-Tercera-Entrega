@@ -5,22 +5,33 @@
 }*/
 
 .main__Index{
-    width: 100vw;
-    background-color: #f3a18360;
+    width: 100%;
+    /*background-color: #f3a18360;*/
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "a b c";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "a b c d";
 }
 
 .main__Index-a{
     grid-area: a;
-    height: 50vh;
-    filter: blur(8px);
+    /*height: 50vh;*/
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    background-color: #006062;
 }
+
+/*.main__Index-a:hover{
+    transition: filter 2.5s ease-in;
+    background-color: $color-secundario;
+    background-position: center;
+    
+}*/
+
 
 #carouselExampleIndicators{
     width: 100%;
-    grid-area: b;
+    grid-area: c;
     display: flex;
     justify-content: center;
     background-color: $color-carousel;
@@ -36,6 +47,23 @@
     height: 40vh;
 }*/
 
-.main__Index-c{
-    grid-area: c;
+.main__Index-b{
+    grid-area: b;
+    background-color: #006769;
+}
+
+.main__Index-b:hover{
+    background-image: url(../../imagenes/Carousel2cv.jpg);
+    background-size: cover;
+}   
+
+.main__Index-d{
+    grid-area: d;
+    background-color: #009597;
+    
+}
+
+.main__Index-d:hover{
+    background-image: url(../../imagenes/Carousel1cv.jpg);
+    background-size: contain;
 }
